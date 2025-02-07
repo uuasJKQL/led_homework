@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"led_homework\startup_stm32f103xb.o"
+"led_homework\main.o"
+"led_homework\gpio.o"
+"led_homework\adc.o"
+"led_homework\tim.o"
+"led_homework\stm32f1xx_it.o"
+"led_homework\stm32f1xx_hal_msp.o"
+"led_homework\stm32f1xx_hal_gpio_ex.o"
+"led_homework\stm32f1xx_hal_adc.o"
+"led_homework\stm32f1xx_hal_adc_ex.o"
+"led_homework\stm32f1xx_hal.o"
+"led_homework\stm32f1xx_hal_rcc.o"
+"led_homework\stm32f1xx_hal_rcc_ex.o"
+"led_homework\stm32f1xx_hal_gpio.o"
+"led_homework\stm32f1xx_hal_dma.o"
+"led_homework\stm32f1xx_hal_cortex.o"
+"led_homework\stm32f1xx_hal_pwr.o"
+"led_homework\stm32f1xx_hal_flash.o"
+"led_homework\stm32f1xx_hal_flash_ex.o"
+"led_homework\stm32f1xx_hal_exti.o"
+"led_homework\stm32f1xx_hal_tim.o"
+"led_homework\stm32f1xx_hal_tim_ex.o"
+"led_homework\system_stm32f1xx.o"
+--strict --scatter "led_homework\led_homework.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "led_homework.map" -o led_homework\led_homework.axf
